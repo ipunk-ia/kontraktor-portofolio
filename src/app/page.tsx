@@ -102,7 +102,7 @@ export default function Home() {
               ))}
             </ul>
           </div>
-          <div className="lg:col-span-5 relative aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-neutral-800 max-w-md mx-auto w-full">
+          <div className="lg:col-span-5 relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-neutral-800 w-full max-w-[400px] mx-auto lg:ml-auto lg:mr-0">
             <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80" alt="Konstruksi Gedung" className="w-full h-full object-cover" />
           </div>
         </div>
