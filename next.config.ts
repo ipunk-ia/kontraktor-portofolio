@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
         hostname: 'api.dicebear.com',
       },
     ],
+    qualities: [70, 75],
   },
 };
 
