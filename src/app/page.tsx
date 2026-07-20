@@ -84,8 +84,8 @@ export default function Home() {
       </section>
 
       <section className="section bg-neutral-900 text-white" aria-labelledby="why-heading">
-        <div className="container-main grid-2 items-center gap-16">
-          <div>
+        <div className="container-main grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16">
+          <div className="lg:col-span-7">
             <h2 id="why-heading" className="text-h2 text-white">Kenapa Bumi Konstruksi?</h2>
             <p className="text-body-lg text-neutral-300 mt-4 mb-8">Kami memahami kekhawatiran Anda: bengkak biaya, molor waktu, hasil tidak rapi. Kami memberikan garansi nyata.</p>
             <ul className="space-y-4">
@@ -102,7 +102,7 @@ export default function Home() {
               ))}
             </ul>
           </div>
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-neutral-800">
+          <div className="lg:col-span-5 relative aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-neutral-800 max-w-md mx-auto w-full">
             <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80" alt="Konstruksi Gedung" className="w-full h-full object-cover" />
           </div>
         </div>
