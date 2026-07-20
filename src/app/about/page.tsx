@@ -1,5 +1,6 @@
 import { company, stats } from '@/data/company';
 import CTASection from '@/components/CTASection';
+import Image from 'next/image';
 import { Award, ShieldCheck, HeartHandshake, FileCheck } from 'lucide-react';
 
 export const metadata = { title: 'Tentang Kami - Bumi Konstruksi', description: 'Sejarah, visi misi, legalitas, sertifikasi, dan komitmen Bumi Konstruksi.' };
@@ -15,11 +16,11 @@ export default function About() {
       </section>
 
       <section className="section bg-white" aria-label="Sejarah">
-        <div className="container-main grid-2 gap-16 items-center">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Kerja Lapangan" className="w-full h-full object-cover" />
+        <div className="container-main grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="lg:col-span-5 relative aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto w-full">
+            <Image src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Kerja Lapangan" fill className="object-cover" quality={80} sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
-          <div>
+          <div className="lg:col-span-7">
             <span className="badge-primary mb-4">Sejarah Kami</span>
             <h2 className="text-h2 text-neutral-900 mb-6">Membangun Kepercayaan Selama 15 Tahun</h2>
             <p className="text-body text-neutral-600 mb-6 leading-relaxed">{company.about}</p>

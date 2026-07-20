@@ -22,11 +22,11 @@ export default function Services() {
             const Icon = icons[svc.icon as keyof typeof icons];
             const even = i % 2 === 0;
             return (
-              <div key={svc.id} id={svc.slug} className={`grid-2 items-center gap-16 scroll-mt-24 ${!even ? 'md:order-last' : ''}`}>
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <div key={svc.id} id={svc.slug} className={`grid grid-cols-1 lg:grid-cols-12 items-center gap-10 lg:gap-16 scroll-mt-24`}>
+                <div className={`relative aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto w-full lg:col-span-5 ${even ? '' : 'lg:order-last'}`}>
                   <img src={svc.image} alt={svc.title} className="w-full h-full object-cover" />
                 </div>
-                <div>
+                <div className="lg:col-span-7">
                   <div className="w-12 h-12 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange mb-6">
                     {Icon && <Icon className="w-6 h-6" />}
                   </div>
